@@ -1,0 +1,36 @@
+{
+    "name": "hexlay/fp-generator",
+    "authors": [
+        {
+            "name": "hexlay",
+            "email": "h3xlay@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hexlay\\FpGenerator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Hexlay\\FpGenerator\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hexlay\\FpGenerator\\FpGeneratorServiceProvider"
+            ],
+            "aliases": {
+                "FpGenerator": "Hexlay\\FpGenerator\\Facades\\FpGenerator"
+            }
+        }
+    }
+}
